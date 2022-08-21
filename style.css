@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+
+*, html , body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+:root {
+    --bg-primary: rgba(70, 89, 255);
+    --bg-secondary: #eaeaea;
+    --txt-primary: #f7f7f7;
+    --txt-secondary: #222222;
+    --icons-bg-primary: tomato;
+    --icons-bg-secondary: #777777;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background-size: 200%;
+    animation: gradient-animation 20s infinite alternate;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card {
+    border: 1px solid white;
+    width: auto;
+    height: 150px;
+    background-color: var(--bg-secondary);
+    color: var(--txt-secondary);
+    padding: 32px;
+    margin: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.title {
+    font-size: 1em;
+    padding-bottom: 10px;
+}
+
+.icons {
+    font-size: 24px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.description  {
+    margin-top: 8px;
+    font-size: 2em;
+    color: var;
+}
+
+.btn {
+    margin-top: 16px ;
+    padding: 8px;
+    border: none;
+    width: 100%;
+    background-color: var(--bg-secondary);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+    transform: skewY(5deg);
+    transition: .3s ease-in-out;
+    transition-delay: .1s;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    opacity: 50%;
+}
+
+
+@keyframes gradient-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
