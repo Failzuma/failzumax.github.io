@@ -43,7 +43,6 @@ a {
 }
 
 .card {
-    width: 70%;
     border: 1px solid white;
     width: 20em;
     height: 150px;
@@ -101,6 +100,7 @@ a {
     }
     .container {
         width: 100%;
+        background-size: 200%;
     }
     
 }
